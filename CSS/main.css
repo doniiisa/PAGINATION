@@ -1,0 +1,80 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.paginate {
+  -webkit-box-shadow: 0px -1px 20px 1px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px -1px 20px 1px rgba(0, 0, 0, 0.18);
+  padding: 10px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 650px;
+}
+
+.paginate a {
+  position: relative;
+  margin-top: 13px;
+  color: #aaaaaa;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.paginate a:last-child {
+  background-color: #eaeaea;
+}
+
+.paginate a:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#159957), to(#155799));
+  background: linear-gradient(to right, #159957, #155799);
+  color: white;
+}
+
+.paginate .active {
+  background: -webkit-gradient(linear, left top, right top, from(#159957), to(#155799));
+  background: linear-gradient(to right, #159957, #155799);
+  color: white;
+}
+
+.paginate p {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #aaaaaa;
+}
+
+.paginate p input {
+  width: 25px;
+  border-radius: 3px;
+}
+
+.paginate p input:focus {
+  outline: none;
+  -o-border-image: linear-gradient(to right, #159957, #155799);
+     border-image: -webkit-gradient(linear, left top, right top, from(#159957), to(#155799));
+     border-image: linear-gradient(to right, #159957, #155799);
+}
+
+.paginate .right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*# sourceMappingURL=main.css.map */

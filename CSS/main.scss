@@ -1,0 +1,61 @@
+$border: linear-gradient(to right, #159957, #155799);
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.paginate {
+  box-shadow: 0px -1px 20px 1px rgba(0, 0, 0, 0.18);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 650px;
+  
+  a {
+      position: relative;
+      margin-top: 13px;
+    color: #aaaaaa;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: all 0.1s ease-in;
+
+    &:last-child {
+      background-color: #eaeaea;
+    }
+    &:hover {   
+      background: linear-gradient(to right, #159957, #155799);
+      color: white;
+    }
+  }
+  .active {   
+    background: linear-gradient(to right, #159957, #155799);
+    color: white;
+
+  }
+  p{
+    transform: rotate(45deg);
+      color: #aaaaaa;
+      input{
+          width: 25px;
+          border-radius: 3px;
+          
+          
+          &:focus{
+            outline: none;
+          border-image:linear-gradient(to right, #159957, #155799);
+          
+          }
+      }
+  }
+  .right{
+    transform: rotate(-45deg);
+  }
+}
